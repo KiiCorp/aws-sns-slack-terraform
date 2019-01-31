@@ -257,11 +257,11 @@ def lambda_handler(event, context):
                 "value": event_records_s3.get('bucket').get('name'),
                 "short": True
             }, {
-                "title": "s3 bucket key",
+                "title": "s3 object key",
                 "value": event_records_s3.get('object').get('key'),
                  "short": True
             }, {
-                "title": "s3 bucket size",
+                "title": "s3 object size",
                 "value": event_records_s3.get('object').get('size'),
                  "short": True
            }]
